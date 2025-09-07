@@ -31,7 +31,18 @@
 <body>
     <header class="container-fluid fixed-top">
     </header>
-    <div class="message-container"></div>
+    {% if messages %}
+    <div class="message-container">
+        {% endif %}
+
+        {% block page_header %}
+        {% endblock %}
+        {% block content %}
+        {% endblock %}
+
+        {% block postloadjs %}
+        {% endblock %}
+    </div>
 </body>
 
 </html>
