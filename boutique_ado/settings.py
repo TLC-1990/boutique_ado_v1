@@ -11,9 +11,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os 
 import dj_database_url
-from pathlib import Path
 if os.path.isfile('env.py'):
     import env
+from pathlib import Path
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -32,7 +32,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '127.0.0.1', # vs code preview
     'localhost', #listen for stripe webhooks
-    'https://boutique-ado-tlc-0fcc328c4020.herokuapp.com/', # heroku app
+    'boutique-ado-tlc-0fcc328c4020.herokuapp.com',
 ]
 
 
